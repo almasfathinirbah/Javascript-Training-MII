@@ -6,13 +6,10 @@
 
 function palindrome(kata) {
   // you can only write your code here!
-  // convert string to an array
   const arrayValues = kata.split('');
 
-  // reverse the array values
   const reverseArrayValues = arrayValues.reverse();
 
-  // convert array to string
   const reverseString = reverseArrayValues.join('');
 
   if(kata == reverseString) {
