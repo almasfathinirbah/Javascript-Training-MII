@@ -7,15 +7,14 @@ function xo(str) {
   // you can only write your code here!
   var x = [];
     var o = [];
-    for (var i = 0; i < str.length; i++) { // i must be lower than length
-        // str[i] or str.charAt(i), not str(i)
-        if (str[i].toLowerCase() === 'x') { // toLowerCase is function, it must be called with toLowerCase()
-            x.push(str[i]); // should push character
+    for (var i = 0; i < str.length; i++) {
+        if (str[i].toLowerCase() === 'x') {
+            x.push(str[i]); 
         } else if (str[i].toLowerCase() === 'o') {
             o.push(str[i]);
         }
     }
-    // return statement must be located at the end
+
     if (x.length == o.length) {
         return true;
     } else {
