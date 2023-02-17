@@ -6,9 +6,9 @@
 
 function tentukanDeretGeometri(arr) {
   // you can only write your code here!
-  if (arr.length <= 2) return true; // special cases
-    var a = arr[1],                   // we dont need to test before this
-        r = a / arr[0],               // ratio of first 2
+  if (arr.length <= 2) return true;
+    var a = arr[1],      
+        r = a / arr[0],   
         i;
     for (i = 2; i < arr.length; ++i)
         if ((a *= r) !== arr[i])
